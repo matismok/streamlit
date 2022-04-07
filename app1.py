@@ -34,8 +34,8 @@ def main():
 
 	with right:
 		age_slider = st.slider("Wiek", value=0.42, min_value=0.42, max_value=80.0)
-		sibsp_slider = st.slider("Liczba rodzeństwa i/lub partnera", min_value=0, max_value=10)
-		parch_slider = st.slider("Liczba rodziców i/lub dzieci", min_value=0, max_value=10)
+		sibsp_slider = st.slider("Liczba rodzeństwa i/lub partnera", min_value=0, max_value=8)
+		parch_slider = st.slider("Liczba rodziców i/lub dzieci", min_value=0, max_value=6)
 		fare_slider = st.slider("Cena biletu", min_value=0.0, max_value=512.3, step=1.0)
 
 	data = [[pclass_radio, sex_radio,  age_slider, sibsp_slider, parch_slider, fare_slider, embarked_radio]]
